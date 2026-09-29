@@ -90,6 +90,9 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 .theme-toggle { display: inline-flex; align-items: center; gap: 7px; padding: 4px; border: 0; color: var(--muted); background: transparent; cursor: pointer; }
 .theme-icon { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; }
 .theme-moon { color: var(--accent); }
+.github-link { width: 34px; height: 34px; display: inline-grid; flex: 0 0 auto; place-items: center; border: 1px solid transparent; border-radius: 4px; color: var(--muted); text-decoration: none; transition: color .18s ease, background .18s ease, border-color .18s ease; }
+.github-link svg { width: 17px; height: 17px; }
+.github-link:hover { border-color: var(--line); color: var(--accent); background: var(--surface); }
 .toggle-track { width: 34px; height: 19px; display: flex; align-items: center; padding: 2px; border: 1px solid var(--line-strong); border-radius: 20px; background: var(--surface-raised); transition: background .2s ease; }
 .toggle-knob { width: 13px; height: 13px; display: block; border-radius: 50%; background: var(--accent); transform: translateX(0); transition: transform .2s ease; }
 html[data-theme='light'] .toggle-knob { transform: translateX(15px); }
@@ -214,6 +217,8 @@ pre code { color: inherit; font-family: inherit; }
 .end-note a { margin-left: auto; color: var(--accent); text-decoration: none; font-size: 10px; }
 .end-note a:hover { color: var(--accent-strong); }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 17px 0 25px; color: var(--dim); font-family: var(--font-mono); font-size: 8px; letter-spacing: .35px; }
+.site-footer a { color: var(--muted); text-decoration: none; transition: color .18s ease; }
+.site-footer a:hover { color: var(--accent); }
 
 .account-dialog { width: min(440px, calc(100vw - 30px)); max-width: none; max-height: calc(100dvh - 30px); overflow: auto; padding: 0; border: 1px solid var(--line-strong); border-radius: 7px; color: var(--text); background: var(--surface); box-shadow: var(--shadow); }
 .account-dialog::backdrop { background: rgba(4, 8, 5, .72); backdrop-filter: blur(4px); }
